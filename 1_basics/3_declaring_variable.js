@@ -24,7 +24,7 @@ console.log(ive);
 const newJeans = '뉴진스';
 console.log(newJeans);
 
-// newJeans = '코드팩토리';
+// newJeans = '코드팩토리'; (에러)Assignment to constant variable.
 
 /**
  * 선언과 할당
@@ -37,4 +37,4 @@ var name = '코드팩토리';
 let girlFriend;
 console.log(girlFriend);
 
-const girlFriend2;
+const girlFriends; //(에러)const는 무조건 값이 초기화되어야 함. :어차피 값을 못바꾸기 때문이다.

@@ -5,13 +5,13 @@
  * 한개의 오브젝트 타입이있다.
  * 
  * 1) Number (숫자)
- * 2) String (문자열)
- * 3) Boolean (불리언)
- * 4) undefined (언디파인드)
+ * 2) String (문자열 : 문자를 리스트로 묶은걸 말한다.)
+ * 3) Boolean (불리언 : 0과 1)
+ * 4) undefined (언디파인드 : 정리가 되지 않은 타임)
  * 5) null (널)
- * 6) Symbol (심볼)
+ * 6) Symbol (심볼 : 최근에 생긴 타입 - 많이 사용하지는 않음.)
  * 
- * 7) Object (객체)
+ * 7) Object (객체 - 자바스크립트 지옥으로 만들어주는 타입)
  *    Function
  *    Array
  *    Object
@@ -29,8 +29,8 @@ console.log(typeof tempature);
 console.log(typeof pi);
 console.log('--------------');
 
-const infinity = Infinity;
-const nInfinity = -Infinity;
+const infinity = Infinity; //양수 무한값
+const nInfinity = -Infinity;//음수 문한값
 
 console.log(typeof infinity);
 console.log(typeof nInfinity);
@@ -39,7 +39,7 @@ console.log('--------------');
 /**
  * String 타입
  */
-const codeFactory = '"코"드팩토리';
+const codeFactory = '"코"드팩토리'; // 따움표 안에다 값 넣어주려면 따른 따움표로 감싸주기
 console.log(codeFactory);
 console.log(typeof codeFactory);
 
@@ -58,7 +58,7 @@ const iveYuJin = '아이브\n안유진'
 console.log(iveYuJin);
 const iveWonYoung = '아이브\t장원영';
 console.log(iveWonYoung);
-const backSlash = '아이브\\코드팩토리';
+const backSlash = '아이브\\코드팩토리'; //백슬레시를 넣고 싶다면 두번
 console.log(backSlash);
 const smallQutoation = '아이브\'코드팩토리';
 console.log(smallQutoation);
@@ -71,13 +71,13 @@ console.log(typeof iveWonYoung2);
 
 const groupName = '아이브';
 console.log(groupName + ' 안유진');
-console.log(`${groupName} 안유진`);
+console.log(`${groupName} 안유진`);//템플릿리터럴(`)안에 변수를 넣으려면 ${변수명} 넣어주면 된다.
 console.log('-------------');
 
 /**
- * Boolean 타입
+ * Boolean 타입 (불리언)
  */
-const isTrue = true;
+const isTrue = true; // true/false 자체를 변수명으로 사용 못함.
 const isFalse = false;
 console.log(typeof isTrue);
 console.log(typeof isFalse);
@@ -118,7 +118,7 @@ const test2 = '1';
 
 console.log(test1 === test2);
 
-const symbol1 = Symbol('1');
+const symbol1 = Symbol('1'); // Simbol 선언 방식 Symbol(값)
 const symbol2 = Symbol('1');
 
 console.log(symbol1 === symbol2);
@@ -160,7 +160,8 @@ console.log(iveMembersArray);
 
 /**
  * index
- * 
+ * - array는 index가 할당된다.
+ *
  * 0부터 시작한다.
  * 1씩 올라갑니다.
  */
@@ -174,6 +175,7 @@ console.log(typeof iveMembersArray);
 /**
  * static typing -> 변수를 선언할때 어떤 타입의 변수를 선언할지 명시를한다.
  *                  C
+ *
  * dynamic typing -> 변수의 타입을 명시적으로 선언하지 않고 갑에의해 타입을 "추론"한다.
  * JS -> dynamic typing
  */
